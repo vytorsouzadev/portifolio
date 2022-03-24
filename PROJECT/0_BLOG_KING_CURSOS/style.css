@@ -1,0 +1,374 @@
+body{margin: 0;padding: 0;overflow-x: hidden;}
+/* ================================ */
+/*=============== NAVBAR ============ */
+/* ================================ */
+nav{
+    overflow: hidden;
+    /* Alinhamento */
+    display: flex;
+    justify-content: center;
+    /* Estilização */
+    background-color: #f1ff20;
+    color: #000;
+    width: 100%;
+    height: 55px;
+    font-family: SF Pro Text,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,sans-serif;
+}
+nav a{ color: #000; }
+nav h2{margin-top: 0;}
+nav .title{
+    /*Alinhamento e Tamanho*/
+    width: 20%;
+    min-width: 200px;
+    margin-top: 0px;
+    margin-left: 12px;
+    /*Estilo*/
+    font-family: serif;
+    display: inline-block;
+}
+/* Lista de Links */
+nav .list{
+    /*Alinhamento e Exibição*/
+    display: none;
+}
+nav .list ul{
+    list-style: none;
+}
+nav .list ul li{
+    display: inline;
+}
+nav .list ul li a{
+    text-decoration: none;
+    padding: 12px 7px;
+    border-bottom: 5px solid transparent;
+}
+
+nav .list ul li a:hover {
+    border-color: #000;
+}
+/* Button */
+.card-button{
+    margin-top: 6px;
+    margin-right: 15px ;
+    display: none;
+    margin-left: -15px;
+}
+.btn{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    border-radius: 7px;
+    border: 0.2px solid #000;
+    background-color: transparent;
+    min-width: 81px;
+    height: 40px;
+}
+#btn-login{
+    color: #000;
+}
+#btn-register{
+    color: #fff;
+    background-color:#000
+}
+#btn-login:hover,#btn-register:hover{
+    background-color: #ffffff;
+    color: #000;
+    transition: 0.4s;
+    border-color: transparent;
+}
+
+/* ============================================ */
+/*=============== HEADER & INFOSUB ============ */
+/* ============================================ */
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+header .card-left{
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+header .card-left h3{
+    width: 100%;
+    text-align: center;
+}
+header .card-right{
+    margin-left: -199px;
+    z-index: 0;
+}
+header .card-right img{
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    justify-content: center;
+    padding: 5px 7px;
+    background-color:#f1ff20 ;
+}
+.info .text{
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.info-sub{
+    padding: 80px 15px!important;
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 25px 12px;
+    font-size: 18px;
+    font-family: ui-sans-serif;
+}
+.info-sub strong{
+    font-family: sans-serif;
+}
+
+
+/* =================================== */
+/*=============== STATICS ============ */
+/* =================================== */
+
+
+.statistics{
+    padding: 20px 0 0 0;
+    background-color: #0055ff;
+    color: #fff;
+    text-align: center;
+    font-family: system-ui;
+}
+h2, label{
+    margin-top: 0;
+    padding: 15px 7px;
+}
+label{margin-top: -35px;font-size: 25px;}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+.card{
+    min-width: 120px;
+    min-height: 60px;
+    padding: 20px;
+    padding-top: 25px;
+    text-align: center;
+}
+.card strong{
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.container-contact{
+    padding: 50px 10px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.container-contact label{
+    text-align: center;
+    
+    font-size: 16px;
+}
+.container-contact label{
+    padding: 10px 14px;
+    margin-bottom: 25px;
+}
+
+.container-contact .btn{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    border-radius: 7px;
+    border: 0.2px solid #000;
+    background-color: #000;
+    color: #fff;
+    min-width: 81px;
+    height: 40px;
+}
+
+
+/* ================================= */
+/*=============== CARDS ============ */
+/* ================================= */
+
+
+.container-posts{
+    background-color: #f7f9fa;
+    display: flex;
+    padding: 45px 25px;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.container-posts .card h3{
+    font-size: 1.7rem;
+    margin-top: 0;
+
+}
+.container-posts .card{
+    padding: 35px 0px 0 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px;
+}
+.container-posts .card .content{
+    padding: 0 25px;
+}
+#card-one{
+    background-color: #9c27b0;
+    color: #fff;
+}
+#card-two{
+    background-color: #f1ff20;
+    color: #000;
+}
+#card-tree{
+    background-color: #159788;
+    color: #fff;
+}
+
+.container-posts .card label{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.container-posts .card .button{
+    height: 65px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+.container-posts .card .button a{
+   color: #fff;
+   text-decoration: none;
+   font-weight: 700;
+   font-family: sans-serif;
+}
+
+
+
+/* ================================== */
+/*=============== FOOTER ============ */
+/* ================================== */
+
+
+footer{
+    padding: 15px 0;
+    background-color: #1c1d1f;
+    color: #fff;
+}
+footer .links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer .links .card ul{
+    list-style: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+footer .links .card ul li{
+    text-align: left;
+    margin-top: 10px;
+}
+footer .copyrights{
+    text-align: center;
+    padding: 20px 0;
+    font-family: system-ui,sans-serif;
+    letter-spacing: 1.5px;
+}
+
+
+
+/* ================================================================== */
+/*================== MediaScreen ==================================== */
+/* ================================================================== */
+
+@media screen and (min-width:560px){
+    
+    /*=============== STATICS ============ */
+    .container-contact .btn{
+        margin: 0 auto;
+        width: 180px;
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+    
+    /*=============== HEADER ============*/
+    header{flex-direction: row;align-items: center;justify-content: center;}
+    .card-left{
+        font-size: 26px;
+        margin:  0 6vw ;
+    }
+    .card-left h3{
+        box-shadow: 2px 2px 0px 0px;
+        width: 100%;
+        padding-right: 7px;
+    }
+    
+    /*=============== INFOSUB ============ */
+    .info, .info-sub{
+        margin-top: -3px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width:720px) {
+   
+    nav{
+        justify-content: space-between;
+    }
+    nav .list{
+        display: flex;
+        margin-right: 25px;
+    }
+    nav .card-button{display: none;}
+
+     /*=============== CARDS ============ */
+
+    .container-posts{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container-posts .card {
+        width: 30%;
+        margin-top: 0;
+    }
+}
+@media screen and (min-width:950px) {
+    /*=============== NAVBAR ============ */
+    nav .list{display: flex;}
+    nav .card-button{display: block;}
+
+    /*=============== HEADER ============ */
+    header .card-right img{
+        width: 125%;
+    }
+    header .card-left h3{
+        font-size: 36px;
+    }
+}
